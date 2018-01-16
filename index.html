@@ -6,9 +6,14 @@
     <title>Contoso News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
     
 </head>
-<body>
+<body class="container">
 <header>
     <h1>Contoso News</h1>
     <h2>On Time, On Topic</h2>
@@ -27,9 +32,9 @@
                 <figcaption>Many Doctors are Moving to Digital Health Records This Year</figcaption>
             </figure>
 </section>
-<main>
+<main class="row">
     <h3>Latest Articles</h3>
-    <article>
+    <article class="well, col-md-4">
             <time datetime="16-01-2016">Friday, Jan 16</time>
             <h4>International Story</h4>
             <p>
@@ -37,7 +42,7 @@
             <a href="#" target="_blank">Read More...</a>
             </p>
     </article>
-    <article>
+    <article class="well,col-md-4">
             <time datetime="14-01-2016">Wednesday, Jan 14</time> 
             <h4>Finance Story</h4>
             <p>
@@ -51,7 +56,7 @@
                 <a href="#" target="_blank">Read More...</a>
             </p>
     </article>
-    <article>
+<article class="well,col-md-4">
             <time datetime="14-01-2016">Wednesday, Jan 14</time> 
             <h4>Technology Story</h4>
             <p>
@@ -60,9 +65,10 @@
             </p>
     </article>
 </main>
-<h4>Sign up For Our Emails</h4>
-<summary>
-    <form>
+
+<summary class="panel,panel-default,col-md-8,col-md-offset-2">
+    <div class="panel-heading">Sign up For Our Emails</div>
+    <form class="*form-horizontal**,panel-body">
         <label>E-Mail Address: </label>
         <input type="text" required="required" />
         <label>Delivery Preference: </label>
